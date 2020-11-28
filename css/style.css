@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Domine:wght@400;700&display=swap');
+
+body {
+    font-family: "Domine", sans-serif;
+}
+
+section {
+    padding: 30px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/*------------------------------Header*/
+
+header {
+    padding: 10px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    white-space: nowrap;
+    display: block;
+}
+
+.title i {
+    padding: 5px;
+}
+
+.title:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* ------------------------------------- Intro Section*/
+
+.intro {
+    background-color: whitesmoke;
+    font-size: 20px;
+    max-width: 2000px;
+}
+
+/* --------------------------- Nav Bar*/
+
+.navbar {
+    max-width: 2000px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: whitesmoke;
+}
+
+/* ------------------------------------- Footer*/
+
+
+footer {
+    height: 150px;
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social i {
+    font-size: 30px;
+    margin: 0;
+    padding: 30px;
+    color: #000000;
+}
+
+/* --------------------------------- Main Image of each page*/
+
+#main-image {
+    height: 600px;
+    width: 100%;
+    background: url("../images/beachride.jpeg") no-repeat center center;
+    background-size: cover;
+
+    animation-name: home-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+}
+
+#main-outer {
+    height: 600px;
+    max-width: 2000px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.contact #main-image {
+    background-image: url("../images/beachride2.jpeg");
+}
+
+/*@keyframes home-zoom {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}*/
+
+/*--------------------------------------------Map*/
+div#map {
+    min-height: 360px;
+}

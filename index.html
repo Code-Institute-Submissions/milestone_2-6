@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> <!--Used in order for the navbar from bootstrap to work -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" type="text/css" /> <!--Links to bootstrap, used to ensure device responsiveness -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"> <!--Links to the icons used -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css"> <!--Links to the css style sheet -->
+    <title>Riding School Locations</title>
+
+</head>
+<body>
+    <header class="d-sm-flex justify-content-center"> <!--Used to center the webpage Title-->
+        <a href="index.html" class="title col-auto">
+            <h1>Horse Riding - Stable Locator</h1>
+        </a>
+    </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light">  <!--Navbar code taken from bootstrap to provide a navbar than is responsive and minimises to a "hamburger" affect menu that drops down when clicked -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+
+    <section id="main-outer"> <!--sets the spacing -->
+        <div id="main-image"></div> <!--this pulls through the main images and animation affect -->
+    </section>
+
+    <section class="intro mb-4 pt-5 pb-5"> 
+        <div class="container d-flex justify-content-center"> <!--Container from boostrap to ensure text is responsive on all devices-->
+            <div class="col-sm text-center">
+                <p class="text-center">“The horse, with beauty unsurpassed, strength immeasurable and grace unlike any other, still remains humble enough to carry a man upon his back” — Amber Senti</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="row justify-content-center"> <!--centers the container of text to be in the middle of the page rather than at the left or right -->
+                <div class="col-sm m-3">
+                    <h3 class="mt-4">Temperament</h3> <!--mt-4 added in order to create spacing to make more appealing -->
+                    <p> English Cocker Spaniels are considered a great dog for first time owners due to their sweet, affectionate and cuddly temperament. 
+                        They are a cheerful breed who constantly has a wagging tail and aims to please their owner.</p>
+                    <p>They are suited to those with a large apartment or home and accompanying yard. On top of this, they are highly intelligent, making them easy to train 
+                        and very adaptable to their new family's lifestyle.</p>
+                    <h3 class="mt-4">Highlights</h3>
+                    <p>Due to the fact Cocker Spaniels are so popular, it is important that the correct breeder is selected, preferable one that is dedicated to impriving the breed and ironing out any health problems from
+                    from previous litters. Cocker Spaniels can be a nervous breed, even from a good breeder, and exhibit submissive urination or peeing when over excited. Train your dog from a very early age, especially
+                    as Cocker's are very vocal dogs, but be sure to use gentle and consistent training methods to get the best result.</p>
+                </div>
+                <div class="col-sm m-3">  
+                    <h3 class="mt-4">Riding School Locations</h3>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="social row justify-content-center"> <!--Links to the various social media sites -->
+            <li class="col-auto"><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="col-auto"><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li class="col-auto"><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlTefqQOMugn88CPF_ly3dS2qHSc4eNtk&callback=initMap"></script>
+    <script src="js/maps.js"></script>
+</body>
+</html>
