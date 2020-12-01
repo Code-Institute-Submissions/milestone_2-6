@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Domine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap&family=Nunito:wght@200&display=swap');
 
 body {
-    font-family: "Domine", sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 section {
@@ -19,7 +19,7 @@ header {
 }
 
 .title {
-    font-family: "Dancing Script", sans-serif;
+    font-family: "Cinzel", sans-serif;
     font-weight: 700;
     color: #000000;
     white-space: nowrap;
@@ -96,14 +96,14 @@ footer {
     background-image: url("../images/beachride2.jpeg");
 }
 
-/*@keyframes home-zoom {
+@keyframes home-zoom {
     from {
-        transform: scale(1.1);
-    }
-    to {
         transform: scale(1);
     }
-}*/
+    to {
+        transform: scale(1.1);
+    }
+}
 
 /*--------------------------------------------Map*/
 div#map {

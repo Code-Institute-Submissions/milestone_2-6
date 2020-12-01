@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> <!--Used in order for the navbar from bootstrap to work -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" type="text/css" /> <!--Links to bootstrap, used to ensure device responsiveness -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"> <!--Links to the icons used -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>South Wales Riding School Locations</title>
+</head>
+<body class="contact">
+     <header class="d-sm-flex justify-content-center">    
+        <a href="index.html" class="title col-auto">
+            <h1>Horse Riding Centres</h1>
+        </a>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light"> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactForm.html">Contact</a>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <section id="main-outer">
+        <div id="main-image"></div>
+    </section>
+
+    <section class="intro mb-4 pt-5 pb-5">
+        <div class="container d-flex justify-content-center">
+            <div class="col-sm text-center">
+                <h2>Contacting us</h2>
+                <p>If you can't find the nearest riding centre to you listed, feel free to pop us a message enquring for any details. 
+                Please include the location you have searched for and we will get back to you with any riding centres within or as close to your searched location.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <form onsubmit="return sendMail(this);">
+                <div class="form-group">
+                    <label for="name">Enter your Name</label>
+                    <input type="text" name="name" class="form-control" id="name" aria-describedby="detailsHelp">
+                </div>
+                <div class="form-group">
+                    <label for="emailaddress">Enter your email address</label>
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress">
+                    <small id="detailsHelp" class="form-text text-muted">We'll never share your personal information with anyone else.</small>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="formCheck">
+                    <label class="form-check-label" for="formCheck">Save details to database</label>
+                </div>
+                <div class="form-group">
+                    <label for="formControlTextarea">Enter your message here</label>
+                    <textarea class="form-control" name="informationsummary" id="formControlTextarea" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="social row justify-content-center">
+            <li class="col-auto"><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="col-auto"><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li class="col-auto"><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!--Links the sendEmail javascript file-->
+    <script src="js/sendEmail.js"></script>
+    <!--Used to load the EmailJS SDK-->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function() {
+            //used to initialise the SDK with the unique user name
+            emailjs.init("user_whz5oSP0zQmDbpvvez8BA");
+        })();
+    </script>
+</body>
+</html>

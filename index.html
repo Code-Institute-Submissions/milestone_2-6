@@ -13,13 +13,14 @@
 
 </head>
 <body>
-    <header class="d-sm-flex justify-content-center"> <!--Used to center the webpage Title-->
+    <!--Used to center the webpage Title-->
+    <header class="d-sm-flex justify-content-center">
         <a href="index.html" class="title col-auto">
             <h1>South Wales Horse Riding</h1>
         </a>
     </header>
-
-        <nav class="navbar navbar-expand-lg navbar-light">  <!--Navbar code taken from bootstrap to provide a navbar than is responsive and minimises to a "hamburger" affect menu that drops down when clicked -->
+        <!--Navbar code taken from bootstrap to provide a navbar than is responsive and minimises to a "hamburger" affect menu that drops down when clicked -->
+        <nav class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,10 +28,12 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a> <!-- links the home page -->
+                    <!-- links the contact page-->
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contactForm.html">Contact</a> <!-- links the contact page-->
+                    <!-- links the contact page-->
+                    <a class="nav-link" href="contact-form.html">Contact</a>
                 </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -40,13 +43,15 @@
             </div>
         </nav>
 
-
-    <section id="main-outer"> <!--sets the spacing -->
-        <div id="main-image"></div> <!--this pulls through the main images for the main and contact pages -->
+    <!--sets the spacing of the images for home and contact page -->
+    <section id="main-outer">
+        <!--Pulls through the affect created in style.css, applied to the ID main image, used for the stand out image on the home and contact page -->
+        <div id="main-image"></div>
     </section>
 
     <section class="intro mb-4 pt-5 pb-5"> 
-        <div class="container d-flex justify-content-center"> <!--Container from boostrap to ensure text is responsive on all devices-->
+        <!--Container from boostrap to ensure text is responsive on all devices-->
+        <div class="container d-flex justify-content-center">
             <div class="col-sm text-center">
                 <p class="text-center">“The horse, with beauty unsurpassed, strength immeasurable and grace unlike any other, still remains humble enough to carry a man upon his back” — Amber Senti</p>
             </div>
@@ -54,8 +59,11 @@
     </section>
     
     <section>
+        <!--Adds a padding to cushion it from the end of the page and other containers-->
         <div class="container">
-            <div class="row justify-content-center"> <!--centers the container of text to be in the middle of the page rather than at the left or right -->
+            <!--centers the container of text to be in the middle of the page rather than at the left or right -->
+            <div class="row justify-content-center">
+                <!--Used to define screen size content can display on-->
                 <div class="col-sm m-3">
                     <h3 class="mt-4">Riding Lessons</h3> <!--mt-4 added in order to create spacing to make more appealing -->
                     <p>There are various riding centres throughout the Uk. Some have riding instructors that have completed up to BHS Stage 4 qualifications, others have advanced to a coach specifying in certain disciplines such as dressage, show jumping or cross country. While there are variations in the level
@@ -68,9 +76,11 @@
                     <p>While lessons are a great way to start learning to ride, you may prefer a relaxing experience in the countryside, giving you the opportunity to explore and visit new locations while taking in the sun and fresh air. Riding stables can also provide half day or full day rides for beginners
                     or faster paced hacks and pub riders for those that have many years of riding experience.</p>
                     <p>Our below map also lists areas that provide treks, hacks, pub rides, riding holidays and pony days. Zoom in on an area you'd love to visit and browse the available riding stables.</p>
+                    <p>Trekking centres are displayed with a purple marker, while riding schools are orange.</p>
                 </div>
             </div>
-            <div id="map"></div> <!-- used to call the google map js in order for it to show on the main page-->
+            <!--Holds the map-->
+            <div id="map"></div>
         </div>
     </section>
 
@@ -85,7 +95,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <!--Used to load the Maps Javascript API-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlTefqQOMugn88CPF_ly3dS2qHSc4eNtk&callback=initMap"></script>
+    <!--Links to javascript maps file -->
     <script src="js/maps.js"></script>
 </body>
 </html>
